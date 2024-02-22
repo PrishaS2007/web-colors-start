@@ -1,5 +1,11 @@
 // WEB COLORS START
 
+// Global Variables
+let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+// HTML Variables
+let outputEl = document.getElementById("container");
+
 // Event Listener on Go Button
 document.getElementById("go-btn").addEventListener("click", goBtnClicked);
 
@@ -22,6 +28,7 @@ function goBtnClicked() {
 // Display All Colors
 function displayAll() {
   console.log("Display All Colors");
+  outputEl.innerHTML = `<h4>${colors[0]}</h4>`;
 }
 
 // Display all Colors with prompted Starting Letter
