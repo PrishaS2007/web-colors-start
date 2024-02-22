@@ -27,8 +27,10 @@ function goBtnClicked() {
 // MENU FUNCTIONS
 // Display All Colors
 function displayAll() {
-  console.log("Display All Colors");
-  outputEl.innerHTML = `<h4>${colors[0]}</h4>`;
+  outputEl.innerHTML = "<h2>DISPLAY ALL COLORS</h2>";
+  for (let i = 0; i < 7; i++) {
+    outputEl.innerHTML += `<h4 style="color:${colors[i]}">${colors[i]}</h4>`;
+  }
 }
 
 // Display all Colors with prompted Starting Letter
