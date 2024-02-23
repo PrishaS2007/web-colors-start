@@ -9,14 +9,19 @@
     <title>Web Colors</title>
 
     <link rel="stylesheet" href="style.css" />
-
-    <script defer src="main.js"></script>
+    <script src="js/load-file-library.js"></script>
+    <script defer src="main.js" type="module"></script>
   </head>
 
   <body>
     <main>
       <h1>Web Colors</h1>
       <hr />
+
+      <p>
+        <input id="colors-in" type="text" />
+        <button id="update-btn">Update Colors</button>
+      </p>
 
       <p>
         <select id="menu-select">
